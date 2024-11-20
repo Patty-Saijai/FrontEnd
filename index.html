@@ -10,16 +10,130 @@
     class = ซ้ำกันได้ ใช้ tag .
     -->
 <style>
-    .container{
+    /*body{
+       /* height: 100vh;*/
+      /* height: 100vh;
+   }*/
+    .container5{
+        
+        display: flex;
+  column-gap: 5px;
+        flex-wrap: wrap;
+     /*   flex-direction: row;*/
+        flex-flow: row wrap;
+        /*  justify-content: center;  เป็น Center ในแกน rows ถ้าไม่ใส่ justify จะแสดงในแกนหลัก */
+       /* justify-content: center;*/
+       /* height: 100vh;*/
+        align-items: center;
+         /*    align-items: center; เป็น Center ในแกน rows ถ้าไม่ใส่ align จะแสดงในแกนรอง*/
+         gap: 8px;
+
+
+    }
+    .container2{
+        
+        display: flex;
+  
+        flex-wrap: wrap;
+     /*   flex-direction: row;*/
+        flex-flow: row wrap;
+        /*  justify-content: center;  เป็น Center ในแกน rows ถ้าไม่ใส่ justify จะแสดงในแกนหลัก */
+       /* justify-content: center;*/
+       /* height: 100vh;*/
+        align-items: center;
+         /*    align-items: center; เป็น Center ในแกน rows ถ้าไม่ใส่ align จะแสดงในแกนรอง*/
+         gap: 8px;
+
+
+    }
+    .flex-container{
+        
+        display: flex;
+  
+        flex-wrap: wrap;
+     /*   flex-direction: row;*/
+        flex-flow: row wrap;
+        /*  justify-content: center;  เป็น Center ในแกน rows ถ้าไม่ใส่ justify จะแสดงในแกนหลัก */
+       /* justify-content: center;*/
+       /* height: 100vh;*/
+        align-items: center;
+         /*    align-items: center; เป็น Center ในแกน rows ถ้าไม่ใส่ align จะแสดงในแกนรอง*/
+         gap: 8px;
+         align-content: center;
+
+    }
+    .flex-item{
+        background-color:grey;
+        padding: 16px;
+        border: 1px solid grey;
+     /*   min-width: 50px;*/
+        color: black;
+        flex-flow: row wrap;
+        padding: 8px 8px;
+
+    }
+    .Feature{
+        order: -1;
+    }
+    .flex-item1{
+        background-color:hsl(0, 0%, 100%);
+        display: inline-block;
+       /* border: 1px solid #e8e8e8 ;*/
+        color:white;
+        transition: all 0.3s;
+        flex-flow: row wrap;
+    }
+    
+    .flex-item2{
+        background-color:hsl(0, 78%, 22%);
+        border-bottom-color: aquamarine;
+        display: inline-block;
+        border: 2px solid black;
+        padding: 16px;
+        margin: 8px;
+        border-radius: 16px;
+        color: white;
+        flex-flow: row wrap;
+    }
+    .flex-item3{
+        background-color:hsl(0, 78%, 22%);
+        border-bottom-color: aquamarine;
+       /* display: inline-block;*/
+        border: 2px solid black;
+        padding: 8px 12px;
+        margin: 8px;
+        border-radius: 16px;
+        color: rgb(255, 255, 255);
+        flex-flow: row wrap;
+    }
+    .flex-item4{
+        background-color:hsl(0, 3%, 6%);
+        border-bottom-color: rgb(9, 10, 9);
+        display: inline-block;
+        border: 1px solid black;
+        padding: 8px 12px 8px 12px;
+        margin: 8px;
+        border-radius: 9px;
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+        flex-flow: row wrap;
+    }
+   .container9{
         display: grid;
-        grid-template-columns: repeat(12,1fr);
-      /*grid-template-columns: 100px 1000px 100px;*/
+      /*  grid-template-columns: repeat(4,1fr);*/
+      /*grid-column: span 3;*/
+      grid-template-columns: auto auto auto auto;
+      justify-content: center;
+      gap: 8px 8px;
+      gap: 8px;
+  
         /* grid-template-columns: auto 100px auto auto auto auto;*/
-        grid-template-columns: auto auto auto;
+       /* grid-template-columns: auto auto auto;*/
        /* grid-template-rows:  auto auto auto;*/
        /* gap: 16px 32px;*/
        background-color: burlywood;
-       gap: 8px;
+      /* gap: 8px;*/
      /*   row-gap: 16;
         column-gap: 32px;
         background-color: burlywood;
@@ -28,6 +142,41 @@
         "Header Header Header" 
         "Menu Main Rigth"
         "Menu Footer Footer";*/
+    }
+    .container{
+        display: grid;
+      /*grid-template-columns: 100px 1000px 100px;*/
+        /* grid-template-columns: auto 100px auto auto auto auto;*/
+        grid-template-columns: auto auto auto auto;
+       /* grid-template-rows:  auto auto auto;*/
+        gap: 8px 8px;
+        /*row-gap: 16;*/
+        column-gap: 5px;
+        justify-content: center;
+       
+    }
+   
+    .item, .item-big{
+    background-color: blanchedalmond;
+    padding: 32px;
+    }
+    .item-big{
+        grid-column:2 / span 2;
+        grid-row: 1 / span 2;
+    }
+    .Display-Flex{
+        display: flex;
+        flex-flow: row wrap;
+        gap :16px;
+
+    }
+    .tags{
+        display: flex;
+        flex-wrap: wrap;
+        margin: .5rem;
+    }
+    .tag-item{
+        padding: ;
     }
     /*.Header{
         grid-area: Header;
@@ -53,7 +202,7 @@
     background-color: red;
     padding: 32px;
     } */
-    .item-Special {
+   /*.item-Special {
     /*  grid-column:2; 
       grid-row:2; 
      grid-column:1/3;*/
@@ -61,14 +210,101 @@
     grid-row:2;*/
     /* grid-area: 1/2/5/6;*/
     /* grid-area: 1/2/span 4/span 4; */
+  /*  }*/
+.square{
+    width: 100px;
+    height: 100px;
+    background-color:blue;
+    animation: spin 1s linear infinite;/*ใช้กำหนดการเปลี่ยนแปลงอินิเมชั่น 1s หมุนต่อรอบ , linear กราฟ,  */
+    border-radius: 100px;
+}
+/*ใช้กำหนดการเปลี่ยนแปลงอินิเมชั่น*/
+@keyframes spin {
+    0%{
+        /* transform: translate(-50%,-50%)rotate(0deg);*? /*ใช้กำหนดการเปลี่ยนแปลงอินิเมชั่น 0 ตือจุดเริ่มต้น rotate หมุน จาก 0 องศา*/
+        transform: translate(0,0)rotate(0deg);
     }
-
+    50%{ transform: translate(0,100px)rotate(180deg)
+    }
+    100%{
+        transform: translate(0,0px)rotate(360deg)
+        /*transform: translate(-50%,-50%)rotate(360deg)*/;/*ใช้กำหนดการเปลี่ยนแปลงอินิเมชั่น 100 จุดสิ้นสุด rotate หมุน จาก 360 องศา*/
+    }
+}
+.flex{
+    display: flex;
+    justify-content: center;
+}
 </style>
 </head>
 <body>
-    <h1 > Hello Patty IT </h1>
-    <h2 > Hello Patty IT </h2>
- <div class="container">
+  <div class="flex">
+<div class="square"></div>
+</div>  
+
+   <!--  <h1 > Hello Patty IT </h1>
+    <h2 > Hello Patty IT </h2>-->
+ <!--  <div>
+        <div class="container2">
+            <img class="flex-item1" src="1.png" alt="logo-tvi"  width="50px" height="50px">
+            <img class="flex-item1" src="1.png" alt="logo-tvi"  width="50px" height="50px">
+            <img class="flex-item1" src="1.png" alt="logo-tvi"  width="50px" height="50px">
+            <img class="flex-item1" src="1.png" alt="logo-tvi"  width="50px" height="50px">
+           <div class="flex-item">Menu5</div>
+            <div class="flex-item">Menu6</div>-->
+           <!-- <div class="flex-item">2</div>
+            <div class="flex-item">3</div>
+            <div class="flex-item">4</div>-->
+      
+      <!-- </div>
+    <div class="container2">
+        <div class="flex-item1">Product 1</div> 
+        <div class="flex-item1">Product 2</div>
+        <div class="flex-item1">Product 3</div>
+        <div class="flex-item1 Feature">Feature Product</div>
+       <div class="flex-item">Menu5</div>
+        <div class="flex-item">Menu6</div>-->
+       <!-- <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>-->
+  
+   <!-- </div>
+    </div>--> 
+   <!-- <div class="flex-container">
+
+        <div class="flex-item">
+            <img  src="1.png" alt="logo-tvi"  width="50px" height="50px">
+            <H2>Product 1</H2>
+            <button>Product 1</button>
+        </div>
+
+        <div class="flex-item">            
+            <img  src="1.png" alt="logo-tvi"  width="50px" height="50px">
+            <H2>Product 2</H2>
+            <button>Product 2</button>
+        </div>
+  
+        <div class="flex-item">
+            <img src="1.png" alt="logo-tvi"  width="50px" height="50px">
+            <H2>Product 3</H2>
+            <button>Product 3</button>
+        </div>
+        <div class="flex-item Feature">
+            <img src="1.png" alt="logo-tvi"  width="50px" height="50px">
+            <H2>Feature Product</H2>
+            <button>Feature Product</button>
+        </div>
+       <div class="flex-item">Menu5</div>
+        <div class="flex-item">Menu6</div>-->
+       <!-- <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>-->
+  
+   <!-- </div> -->
+
+   
+
+ <!--<div class="container">
     <div class="item Header">
         <div>
 <p>Logo</p>
@@ -96,7 +332,7 @@
     <div class="item Menu">Menu</div>
 
 
-    <!--   <div class="item Header">
+     <div class="item Header">
         <div>
 <p>Logo</p>
         </div>
@@ -125,7 +361,34 @@
     <div class="item">13</div>
     <div class="item">14</div>
     <div class="item">15</div>--> 
+ <!--</div>--> 
+  <div class="container">
+    <div class="item col1">
+            <img  src="1.png" alt="logo-tvi"  width="50px" height="50px">
+            <H4>Product Detail 1 </H4>
+    </div>
+    <div class="item col2">       
+        <img  src="1.png" alt="logo-tvi"  width="50px" height="50px">
+        <H4>Product Detail 2 </H4></div>
+    <div class="item col3">
+        <img  src="1.png" alt="logo-tvi"  width="50px" height="50px">
+        <H4>Product Detail 3 </H4>
+    </div>
+    <div class="item col4">
+        <img  src="1.png" alt="logo-tvi"  width="50px" height="50px">
+        <H4>Product Detail 4 </H4>
+    </div>
+    <div class="item-big">       
+        <img  src="1.png" alt="logo-tvi"  width="50px" height="50px">
+        <H1>Product Detail 5 </H1>
+        <div class="Display-Flex">
+        <button>IT </button>
+        <button>AI</button>
+        <button>Programming</button>
+        <button>Education</button>
+         </div>
+    </div>
+ 
  </div>
-
 </body>
 </html>
